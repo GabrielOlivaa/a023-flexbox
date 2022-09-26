@@ -4,35 +4,55 @@
 }
 
 main{
+  height: 100%;
   display: flex;
   gap: 20px;
   padding: 20px;
   width: 800px;
   margin: 0 auto;
   background-color: orange;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 30px;
 }
 
 section{
   height: 100px;
+  width: 800px;
   background-color: steelblue;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-basis: 80px;
+  
+  
+
 }
 
 #section-1{
+  order: 3;
 }
 
 #section-2{
+  order:2 ;
+  flex-grow: 2;
+
 }
+
 
 #section-3{
+order: 1;
+flex-grow: 3;
 }
 
+
 #section-4{
+  order:0 ;
+  flex-grow: 4;
 }
 
 #section-5{
+  order: 4;
 }
